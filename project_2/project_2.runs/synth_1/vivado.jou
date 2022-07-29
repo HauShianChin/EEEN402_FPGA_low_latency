@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jul 25 14:57:59 2022
+# Process ID: 8640
+# Current directory: H:/EEEN402labs/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log gates.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gates.tcl
+# Log file: H:/EEEN402labs/project_2/project_2.runs/synth_1/gates.vds
+# Journal file: H:/EEEN402labs/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gates.tcl -notrace

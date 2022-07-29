@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jul 28 15:03:34 2022
+# Process ID: 13672
+# Current directory: H:/EEEN402/week2projects/project_2_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10964 H:\EEEN402\week2projects\project_2_4\project_2_4.xpr
+# Log file: H:/EEEN402/week2projects/project_2_4/vivado.log
+# Journal file: H:/EEEN402/week2projects/project_2_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/EEEN402/week2projects/project_2_4/project_2_4.xpr
+update_compile_order -fileset sources_1
+open_project H:/EEEN402/week2projects/project_2_3/project_2_3.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {H:/EEEN402/week2projects/project_2_3/project_2_3.runs/impl_1/muxdelay.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/EEEN402/week2projects/project_2_3/project_2_3.runs/impl_1/muxdelay.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+synth_design -rtl -name rtl_1
+place_ports s T13
+place_ports {m[1]} V11
+place_ports {m[0]} V12
+place_ports {x[1]} V10
+place_ports {x[0]} U11
+place_ports {y[1]} U12
+place_ports {y[0]} H6
+set_property target_constrs_file {H:/EEEN402/week2projects/project_2/Lab2 student/Lab1_2_3/mux_2bit_2_to_1_dataflow.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+current_project project_2_4
+close_project
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {H:/EEEN402/week2projects/project_2_3/project_2_3.runs/impl_1/muxdelay.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/EEEN402/week2projects/project_2_3/project_2_3.runs/impl_1/muxdelay.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/EEEN402/week2projects/project_2_3/project_2_3.runs/impl_1/muxdelay.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

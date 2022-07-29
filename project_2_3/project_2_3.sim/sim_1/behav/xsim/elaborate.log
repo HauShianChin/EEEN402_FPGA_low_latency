@@ -1,0 +1,8 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 33ad59dbfac94cf7a11d28b20c87e449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mux_2bit_2_to_1_dataflow_tb_behav xil_defaultlib.mux_2bit_2_to_1_dataflow_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'mux_2bit_2_to_1_dataflow' remains a black box since it has no binding entity [H:/EEEN402labs/project_2/Lab2 student/Lab1_2_3/mux_2bit_2_to_1_dataflow_tb.vhd:30]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

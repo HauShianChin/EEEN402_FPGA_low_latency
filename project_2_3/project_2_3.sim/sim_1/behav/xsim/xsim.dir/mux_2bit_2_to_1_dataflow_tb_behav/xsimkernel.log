@@ -1,0 +1,7 @@
+Running: xsim.dir/mux_2bit_2_to_1_dataflow_tb_behav/xsimk.exe -simmode gui -wdb mux_2bit_2_to_1_dataflow_tb_behav.wdb -simrunnum 0 -socket 55246
+Design successfully loaded
+Design Loading Memory Usage: 6372 KB (Peak: 6372 KB)
+Design Loading CPU Usage: 78 ms
+Simulation completed
+Simulation Memory Usage: 6896 KB (Peak: 6896 KB)
+Simulation CPU Usage: 78 ms
