@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jul 31 15:23:35 2022
+# Process ID: 24596
+# Current directory: D:/GitHub/EEEN402_FPGA_low_latency/project_2_behavioural/project_2_behavioural.runs/synth_1
+# Command line: vivado.exe -log mux_behave.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_behave.tcl
+# Log file: D:/GitHub/EEEN402_FPGA_low_latency/project_2_behavioural/project_2_behavioural.runs/synth_1/mux_behave.vds
+# Journal file: D:/GitHub/EEEN402_FPGA_low_latency/project_2_behavioural/project_2_behavioural.runs/synth_1\vivado.jou
+# Running On: Ian, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17119 MB
+#-----------------------------------------------------------
+source mux_behave.tcl -notrace
