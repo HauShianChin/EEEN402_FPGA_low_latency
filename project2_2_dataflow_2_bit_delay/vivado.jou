@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jul 31 16:02:35 2022
+# Process ID: 21968
+# Current directory: D:/GitHub/EEEN402_FPGA_low_latency/project2_2_dataflow_delay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11484 D:\GitHub\EEEN402_FPGA_low_latency\project2_2_dataflow_delay\project2_2_2.xpr
+# Log file: D:/GitHub/EEEN402_FPGA_low_latency/project2_2_dataflow_delay/vivado.log
+# Journal file: D:/GitHub/EEEN402_FPGA_low_latency/project2_2_dataflow_delay\vivado.jou
+# Running On: Ian, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17119 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/GitHub/EEEN402_FPGA_low_latency/project2_2_dataflow_delay/project2_2_2.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project project_2_dataflow_2_bit D:/GitHub/EEEN402_FPGA_low_latency/project_2_dataflow_2_bit -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+file mkdir D:/GitHub/EEEN402_FPGA_low_latency/project_2_dataflow_2_bit/project_2_dataflow_2_bit.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+close [ open D:/GitHub/EEEN402_FPGA_low_latency/project_2_dataflow_2_bit/project_2_dataflow_2_bit.srcs/sources_1/new/mux_dataflow_2bit.vhd w ]
+add_files D:/GitHub/EEEN402_FPGA_low_latency/project_2_dataflow_2_bit/project_2_dataflow_2_bit.srcs/sources_1/new/mux_dataflow_2bit.vhd
+add_files -fileset constrs_1 -norecurse {{D:/GitHub/EEEN402_FPGA_low_latency/project_2/Lab2 student/Lab1_2_2/mux_2bit_2_to_1_dataflow..xdc}}
+update_compile_order -fileset sources_1
