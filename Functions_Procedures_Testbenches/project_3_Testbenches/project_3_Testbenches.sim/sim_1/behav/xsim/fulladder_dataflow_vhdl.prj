@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Lab3 student/Lab4-3-1/fulladder_dataflow.vhd" \
+
+# Do not sort compile order
+nosort

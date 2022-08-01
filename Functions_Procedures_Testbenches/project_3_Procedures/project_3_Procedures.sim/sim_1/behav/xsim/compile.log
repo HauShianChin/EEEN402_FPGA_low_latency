@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/Functions_Procedures_Testbenches/Lab3 student/Lab4-1-2/calc_even_parity_procedure.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calc_even_parity_procedure'
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/GitHub/Functions_Procedures_Testbenches/Lab3 student/Lab4-1-2/calc_even_parity_procedure_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calc_even_parity_procedure_tb'

@@ -1,0 +1,1 @@
+-wto "d4aed146721a4fb5abded0fb259ee0c5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "waveform_generation_tb_behav" "xil_defaultlib.waveform_generation_tb" -log "elaborate.log" 
