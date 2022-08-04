@@ -1,1 +1,1 @@
--wto "961ad5dedbdd4dc9b066e7a8d363f660" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "mux_2bit_2_to_1_dataflow_tb_behav" "xil_defaultlib.mux_2bit_2_to_1_dataflow_tb" -log "elaborate.log" 
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "mux_2bit_2_to_1_dataflow_tb_behav" "xil_defaultlib.mux_2bit_2_to_1_dataflow_tb" -log "elaborate.log" 

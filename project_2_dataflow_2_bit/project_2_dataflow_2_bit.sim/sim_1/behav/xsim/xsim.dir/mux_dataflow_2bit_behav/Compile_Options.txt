@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "mux_dataflow_2bit_behav" "xil_defaultlib.mux_dataflow_2bit" -log "elaborate.log" 

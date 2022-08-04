@@ -52,9 +52,9 @@ x_int (1) <= x (1) and sbar;
 y_int (0) <= y (0) and s; 
 y_int (1) <= y (1) and sbar; 
 
-m (0) <= x_int (0) or y_int (0);
+m (0) <= x_int (0) or x_int (1);
 
-m (1) <= x_int (1) or y_int (1);
+m (1) <= y_int (0) or y_int (1);
 
 
 end Behavioral;

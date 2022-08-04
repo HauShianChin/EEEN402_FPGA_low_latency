@@ -62,8 +62,8 @@ const int NumRelocateId= 2;
 void relocate(char *dp)
 {
 	iki_relocate(dp, "xsim.dir/mux_2bit_2_to_1_dataflow_tb_behav/xsim.reloc",  (void **)funcTab, 2);
-	iki_vhdl_file_variable_register(dp + 7808);
-	iki_vhdl_file_variable_register(dp + 7864);
+	iki_vhdl_file_variable_register(dp + 7856);
+	iki_vhdl_file_variable_register(dp + 7912);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */

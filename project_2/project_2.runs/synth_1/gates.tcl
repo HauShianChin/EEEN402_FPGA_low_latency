@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "H:/EEEN402labs/project_2/project_2.runs/synth_1/gates.tcl"
+  variable script "D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.runs/synth_1/gates.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,25 +70,22 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir H:/EEEN402labs/project_2/project_2.cache/wt [current_project]
-set_property parent.project_path H:/EEEN402labs/project_2/project_2.xpr [current_project]
+set_property webtalk.parent_dir D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.cache/wt [current_project]
+set_property parent.project_path D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo h:/EEEN402labs/project_2/project_2.cache/ip [current_project]
+set_property ip_output_repo d:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib H:/EEEN402labs/project_2/project_2.srcs/sources_1/new/gates.vhd
+read_vhdl -library xil_defaultlib D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.srcs/sources_1/new/gates.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -98,8 +95,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{H:/EEEN402labs/project_2/Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc}}
-set_property used_in_implementation false [get_files {{H:/EEEN402labs/project_2/Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc}}]
+read_xdc {{D:/GitHub/EEEN402_FPGA_low_latency/project_2/Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc}}
+set_property used_in_implementation false [get_files {{D:/GitHub/EEEN402_FPGA_low_latency/project_2/Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
@@ -107,6 +104,9 @@ close [open __synthesis_is_running__ w]
 OPTRACE "synth_design" START { }
 synth_design -top gates -part xc7a100tcsg324-1
 OPTRACE "synth_design" END { }
+if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
+ send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
+}
 
 
 OPTRACE "write_checkpoint" START { CHECKPOINT }

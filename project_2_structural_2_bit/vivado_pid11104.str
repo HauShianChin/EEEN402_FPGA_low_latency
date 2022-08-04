@@ -1,0 +1,116 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 11104
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Aug 04 10:23:23 NZST 2022
+Time zone: 	New Zealand Standard Time (Pacific/Auckland)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/vivado/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	D:/vivado/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ian
+User home directory: C:/Users/ian
+User working directory: D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/vivado/Vivado
+HDI_APPROOT: D:/vivado/Vivado/2022.1
+RDI_DATADIR: D:/vivado/Vivado/2022.1/data
+RDI_BINDIR: D:/vivado/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/ian/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/ian/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/ian/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	D:/vivado/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/vivado.log
+Vivado journal file: 	D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/vivado.jou
+Engine tmp dir: 	D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/.Xil/Vivado-11104-Ian
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: D:/vivado/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: D:/vivado/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: D:/vivado/Vivado/2022.1
+XILINX_VIVADO: D:/vivado/Vivado/2022.1
+XILINX_VIVADO_HLS: D:/vivado/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,378 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\GitHub\EEEN402_FPGA_low_latency\project_2_structural_2_bit\project_2_4.xpr. Version: Vivado v2022.1 
+// Tcl Message: open_project D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,378 MB. GUI used memory: 58 MB. Current time: 8/4/22, 10:23:25 AM NZST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+102093kb) [00:00:27]
+// [Engine Memory]: 1,378 MB (+1293863kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  4227 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2022.1/data/ip'. 
+// [GUI Memory]: 113 MB (+8300kb) [00:00:30]
+// Project name: project_2_4; location: D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1593.734 ; gain = 0.000 
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muxcomp(gates) (muxcomp.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, muxcomp(gates) (muxcomp.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,378 MB. GUI used memory: 65 MB. Current time: 8/4/22, 10:24:20 AM NZST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,378 MB. GUI used memory: 65 MB. Current time: 8/4/22, 10:24:51 AM NZST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,378 MB. GUI used memory: 65 MB. Current time: 8/4/22, 10:25:21 AM NZST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,378 MB. GUI used memory: 65 MB. Current time: 8/4/22, 10:25:51 AM NZST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,378 MB. GUI used memory: 65 MB. Current time: 8/4/22, 10:26:50 AM NZST

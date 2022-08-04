@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{H:/EEEN402labs/project_2/Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc} rfile:{../../../Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/GitHub/EEEN402_FPGA_low_latency/project_2/Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc} rfile:{../../../Lab2 student/Lab1_2_1/mux_2_to_1_dataflow..xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L16 [get_ports x]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

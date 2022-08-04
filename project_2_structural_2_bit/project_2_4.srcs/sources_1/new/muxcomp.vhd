@@ -40,74 +40,36 @@ end muxcomp;
 
  architecture gates of muxcomp is 
 
-    component andgate --calling "function" 
-    port(
-        i0, i1 : in STD_LOGIC;
-        o : out STD_LOGIC
-    ); end component;
+    component and_or_gate --calling "function" 
+    Port ( bits_int : in STD_LOGIC_VECTOR(1 downto 0);
+           s_int : in STD_LOGIC;
+           o_int : out STD_LOGIC);end component;
     
-    component orgate 
-    port(
-        i0, i1 : in STD_LOGIC;
-        o : out STD_LOGIC
-    ); end component;  
- 
     Signal a_int : STD_LOGIC;
     Signal b_int : STD_LOGIC;
-    Signal c_int : STD_LOGIC;
-    Signal d_int : STD_LOGIC;
     Signal sbar : STD_LOGIC;
     
 begin
 
 sbar <= not s;
 
-and_comp_1 : andgate 
+and_or_comp_1 : and_or_gate 
 port map (
-    i0 => x (0),
-    i1 => sbar,
-    o => a_int
+    bits_int => x (1 downto 0),
+    s_int => s,
+    o_int => m (0)
  );
-  
- and_comp_2 : andgate 
  
- port map (
-    i0 => y (0) , --mapping (defining internal connection point) <= assigning
-    i1 => s,
-    o => b_int --
+and_or_comp_2 : and_or_gate 
+port map (
+    bits_int => y (1 downto 0),
+    s_int => s,
+    o_int => m (1)
  );
  
 
- or_comp_1 : orgate port map (
-    i0 => a_int, 
-    i1 => b_int, 
-    o => m (0)
- );
- 
  ---- 2nd half of mux
- 
- and_comp_3 : andgate 
-port map (
-    i0 => x (1),
-    i1 => sbar,
-    o => c_int
- );
-  
- and_comp_4 : andgate 
- 
- port map (
-    i0 => y (1) , --mapping (defining internal connection point) <= assigning
-    i1 => s,
-    o => d_int --
- );
- 
 
- or_comp_2 : orgate port map (
-    i0 => c_int, 
-    i1 => d_int, 
-    o => m (1)
- );
- 
  
 
  

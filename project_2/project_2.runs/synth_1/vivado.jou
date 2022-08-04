@@ -1,12 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Jul 25 14:57:59 2022
-# Process ID: 8640
-# Current directory: H:/EEEN402labs/project_2/project_2.runs/synth_1
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Aug  4 13:25:34 2022
+# Process ID: 3396
+# Current directory: D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.runs/synth_1
 # Command line: vivado.exe -log gates.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gates.tcl
-# Log file: H:/EEEN402labs/project_2/project_2.runs/synth_1/gates.vds
-# Journal file: H:/EEEN402labs/project_2/project_2.runs/synth_1\vivado.jou
+# Log file: D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.runs/synth_1/gates.vds
+# Journal file: D:/GitHub/EEEN402_FPGA_low_latency/project_2/project_2.runs/synth_1\vivado.jou
+# Running On: Ian, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17119 MB
 #-----------------------------------------------------------
 source gates.tcl -notrace

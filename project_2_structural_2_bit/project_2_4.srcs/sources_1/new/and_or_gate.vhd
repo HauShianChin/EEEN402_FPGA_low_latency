@@ -32,16 +32,52 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity and_or_gate is
-    Port ( a0 : in STD_LOGIC;
-           a1 : in STD_LOGIC;
-           b0 : in STD_LOGIC;
-           b1 : in STD_LOGIC;
-           o : out STD_LOGIC);
+    Port ( bits_int : in STD_LOGIC_VECTOR(1 downto 0);
+           s_int : in STD_LOGIC;
+           o_int : out STD_LOGIC);
 end and_or_gate;
 
 architecture Behavioral of and_or_gate is
 
+component andgate --calling "function" 
+    Port ( i0 : in STD_LOGIC;
+           i1 : in STD_LOGIC;
+           o : out STD_LOGIC);end component;
+component orgate --calling "function" 
+    Port ( i0 : in STD_LOGIC;
+           i1 : in STD_LOGIC;
+           o : out STD_LOGIC);end component;
+
+Signal a_int : STD_LOGIC;
+Signal b_int : STD_LOGIC;
+signal c_int : STD_LOGIC;
+Signal sbar : STD_LOGIC;
+
 begin
+
+sbar <= not s_int; 
+
+and_comp_1 : andgate 
+port map (
+    i0 => bits_int(0),
+    i1 => s_int,
+    o => a_int
+ );
+
+and_comp_2 : andgate 
+port map (
+    i0 => bits_int(1),
+    i1 => sbar,
+    o => b_int
+ );
+ 
+ or_comp_1 : orgate
+ port map(
+    i0 => a_int,
+    i1 => b_int,
+    o => o_int
+    );
+
 
 
 end Behavioral;

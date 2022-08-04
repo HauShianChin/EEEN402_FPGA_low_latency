@@ -2,15 +2,17 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Jul 31 16:23:12 2022
-# Process ID: 8596
+# Start of session at: Thu Aug  4 10:23:09 2022
+# Process ID: 7624
 # Current directory: D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17384 D:\GitHub\EEEN402_FPGA_low_latency\project_2_structural_2_bit\project_2_4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18392 D:\GitHub\EEEN402_FPGA_low_latency\project_2_structural_2_bit\project_2_4.xpr
 # Log file: D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/vivado.log
 # Journal file: D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit\vivado.jou
 # Running On: Ian, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17119 MB
 #-----------------------------------------------------------
 start_gui
+open_project D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
@@ -52,15 +54,25 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project -read_only D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.xpr
-INFO: [Project 1-313] Project file moved from 'H:/EEEN402/week2projects/project_2_4' since last save.
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.ip_user_files', nor could it be found using path 'H:/EEEN402/week2projects/project_2_4/project_2_4.ip_user_files'.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project {D:/FPGAs/Lab2 student/Lab1_3_1/project_2/project_2.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGAs/Lab2 student/Lab1_3_1/project_2/project_2.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-229] Project 'project_2_4.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1589.898 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+open_project D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/GitHub/EEEN402_FPGA_low_latency/project_2_structural_2_bit/project_2_4.ip_user_files'.
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2022.1/data/ip'.
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 31 16:42:29 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 10:32:00 2022...
