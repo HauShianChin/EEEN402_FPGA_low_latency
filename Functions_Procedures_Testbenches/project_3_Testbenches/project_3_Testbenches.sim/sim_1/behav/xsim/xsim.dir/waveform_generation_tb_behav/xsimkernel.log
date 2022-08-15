@@ -1,7 +1,7 @@
-Running: xsim.dir/waveform_generation_tb_behav/xsimk.exe -simmode gui -wdb waveform_generation_tb_behav.wdb -simrunnum 0 -socket 58783
+Running: xsim.dir/waveform_generation_tb_behav/xsimk.exe -simmode gui -wdb waveform_generation_tb_behav.wdb -simrunnum 0 -socket 61974
 Design successfully loaded
-Design Loading Memory Usage: 6412 KB (Peak: 6412 KB)
-Design Loading CPU Usage: 62 ms
+Design Loading Memory Usage: 6436 KB (Peak: 6436 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
 Simulation Memory Usage: 6968 KB (Peak: 6968 KB)
-Simulation CPU Usage: 62 ms
+Simulation CPU Usage: 15 ms

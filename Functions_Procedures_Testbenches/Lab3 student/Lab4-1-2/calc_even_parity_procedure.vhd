@@ -17,25 +17,24 @@ Entity calc_even_parity_procedure  Is Port (
 end calc_even_parity_procedure ;
 
 Architecture behavior of calc_even_parity_procedure  Is
-
-
-    procedure calc_even_parity(
-	   Signal ain_int : in STD_LOGIC_VECTOR (7 downto 0);
-	   Signal temp_parity : out STD_LOGIC
-	) is
-    variable k : integer := 0; 
-    variable par_int : STD_ULOGIC := '0';
-    begin
-    for k in 0 to 7 loop 
-        par_int := par_int XOR ain_int(k);
-        end loop;
-        temp_parity <= par_int;
-    end calc_even_parity;
-
-begin
     
+    procedure calc_even_parity(
+	   Signal ain_int : in STD_LOGIC_VECTOR (7 downto 0); --arguments 
+	   Signal parity_out : out STD_LOGIC --arguments
+) is
+        variable k : integer := 0; -- iterator
+        variable par_int : STD_LOGIC := '0'; --internal parity variable
+    begin
+        for k in 0 to 7 loop 
+                
+                par_int := par_int XOR ain_int(k); --xor parity logic 
+            end loop;
+            parity_out <= par_int;
+        end calc_even_parity;
+begin
+   
     process (ain) begin
         calc_even_parity (ain, parity);
     end process;
---Insert your code here
+
 end behavior;

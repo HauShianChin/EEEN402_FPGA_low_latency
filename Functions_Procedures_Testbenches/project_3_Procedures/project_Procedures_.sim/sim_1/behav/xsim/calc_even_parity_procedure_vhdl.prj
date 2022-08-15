@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Lab3 student/Lab4-1-2/calc_even_parity_procedure.vhd" \
+
+# Do not sort compile order
+nosort

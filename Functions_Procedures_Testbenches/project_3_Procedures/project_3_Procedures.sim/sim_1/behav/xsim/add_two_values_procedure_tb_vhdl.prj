@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../Lab3 student/Lab4-1-1/add_two_values_procedure.vhd" \
-"../../../../../Lab3 student/Lab4-1-1/add_two_values_procedure_tb.vhd" \
-
-# Do not sort compile order
-nosort
