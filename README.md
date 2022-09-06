@@ -1,4 +1,11 @@
 # EEEN402_FPGA_low_latency
 VHDL projects
 
-Academic experience of VHDL. demonstrating my understanding of dataflow design, strucutral design, behavourial design and a combination of the previous 3. 31/7/22
+Academic experience of VHDL.
+
+Project 1: Created an SSD that runs off a binary counter. First experience with structural design. 
+Project 2: Demonstrates my understanding of dataflow design, structural design, behavioral design and a combination of the previous 3
+Project 3: Generates function, procedures and testbenches. Observed the efficacy of combinatorial and sequential logic with these 2 objects using a testbench
+Project 4: Developed a Moore state machine using sequential logic 
+Project 5: Implemented a double-digit SSD along with a 1 second blinking LED using Vivado IP catalogue. 
+Project 6: Using Vivado IP catalogue, the MicroBlazer microprocessor can be instantiated onto the FPGA and leveraged using the HDL wrapper. This was later used to program hello world using the Vitis interface for an abstracted usage of the FPGA
