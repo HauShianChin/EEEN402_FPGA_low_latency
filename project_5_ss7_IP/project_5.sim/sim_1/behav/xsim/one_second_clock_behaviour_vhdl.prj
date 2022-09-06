@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_5.srcs/sources_1/ip/c_counter_binary_0/sim/c_counter_binary_0.vhd" \
+"../../../../project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.vhdl" \
+"../../../../../ssd_decoder.vhd" \
+"../../../../../one_second_clock_behaviour.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,243 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Sep  6 15:25:15 2022
+# Process ID: 20200
+# Current directory: H:/EEEN402/project_5/project_5.runs/synth_1
+# Command line: vivado.exe -log one_second_clock_behaviour.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source one_second_clock_behaviour.tcl
+# Log file: H:/EEEN402/project_5/project_5.runs/synth_1/one_second_clock_behaviour.vds
+# Journal file: H:/EEEN402/project_5/project_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source one_second_clock_behaviour.tcl -notrace
+Command: synth_design -top one_second_clock_behaviour -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 928
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1061.246 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'one_second_clock_behaviour' [H:/GitHub/lab5/one_second_clock_behaviour.vhd:44]
+INFO: [Synth 8-3491] module 'clk_5MHz' declared at 'H:/EEEN402/project_5/project_5.runs/synth_1/.Xil/Vivado-20200-two-grey/realtime/clk_5MHz_stub.vhdl:5' bound to instance 'clk_5' of component 'clk_5MHz' [H:/GitHub/lab5/one_second_clock_behaviour.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'clk_5MHz' [H:/EEEN402/project_5/project_5.runs/synth_1/.Xil/Vivado-20200-two-grey/realtime/clk_5MHz_stub.vhdl:14]
+WARNING: [Synth 8-5640] Port 'thresh0' is missing in component declaration [H:/GitHub/lab5/one_second_clock_behaviour.vhd:57]
+INFO: [Synth 8-3491] module 'c_counter_binary_0' declared at 'H:/EEEN402/project_5/project_5.runs/synth_1/.Xil/Vivado-20200-two-grey/realtime/c_counter_binary_0_stub.vhdl:5' bound to instance 'counterA' of component 'c_counter_binary_0' [H:/GitHub/lab5/one_second_clock_behaviour.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [H:/EEEN402/project_5/project_5.runs/synth_1/.Xil/Vivado-20200-two-grey/realtime/c_counter_binary_0_stub.vhdl:14]
+WARNING: [Synth 8-5640] Port 'thresh0' is missing in component declaration [H:/GitHub/lab5/one_second_clock_behaviour.vhd:57]
+INFO: [Synth 8-3491] module 'c_counter_binary_0' declared at 'H:/EEEN402/project_5/project_5.runs/synth_1/.Xil/Vivado-20200-two-grey/realtime/c_counter_binary_0_stub.vhdl:5' bound to instance 'counterB' of component 'c_counter_binary_0' [H:/GitHub/lab5/one_second_clock_behaviour.vhd:99]
+INFO: [Synth 8-3491] module 'ssd_decoder' declared at 'H:/GitHub/lab5/ssd_decoder.vhd:34' bound to instance 'ssd_int' of component 'ssd_decoder' [H:/GitHub/lab5/one_second_clock_behaviour.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'ssd_decoder' [H:/GitHub/lab5/ssd_decoder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ssd_decoder' (1#1) [H:/GitHub/lab5/ssd_decoder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'one_second_clock_behaviour' (2#1) [H:/GitHub/lab5/one_second_clock_behaviour.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1105.262 ; gain = 44.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.262 ; gain = 44.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.262 ; gain = 44.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1105.262 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc] for cell 'clk_5'
+WARNING: [Vivado 12-584] No ports matched ''. [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc:4]
+Finished Parsing XDC File [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc] for cell 'clk_5'
+Parsing XDC File [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counterA'
+Finished Parsing XDC File [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counterA'
+Parsing XDC File [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counterB'
+Finished Parsing XDC File [h:/EEEN402/project_5/project_5.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counterB'
+Parsing XDC File [H:/GitHub/lab5/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [H:/GitHub/lab5/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/GitHub/lab5/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/one_second_clock_behaviour_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/one_second_clock_behaviour_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1202.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1202.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1202.711 ; gain = 141.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1202.711 ; gain = 141.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mclk. (constraint file  h:/EEEN402/project_5/project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mclk. (constraint file  h:/EEEN402/project_5/project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz/clk_5MHz_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for clk_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for counterA. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for counterB. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1202.711 ; gain = 141.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1202.711 ; gain = 141.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 1     
+	  32 Input    7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1202.711 ; gain = 141.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1202.711 ; gain = 141.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1220.457 ; gain = 159.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1221.258 ; gain = 160.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_5MHz           |         1|
+|2     |c_counter_binary_0 |         2|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |c_counter_binary_0_bbox |     2|
+|3     |clk_5MHz_bbox           |     1|
+|4     |CARRY4                  |    24|
+|5     |LUT1                    |     1|
+|6     |LUT4                    |    28|
+|7     |LUT5                    |     9|
+|8     |LUT6                    |    10|
+|9     |FDRE                    |   109|
+|10    |OBUF                    |    17|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1228.039 ; gain = 69.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1228.039 ; gain = 166.793
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1240.105 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1240.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1240.105 ; gain = 178.859
+INFO: [Common 17-1381] The checkpoint 'H:/EEEN402/project_5/project_5.runs/synth_1/one_second_clock_behaviour.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file one_second_clock_behaviour_utilization_synth.rpt -pb one_second_clock_behaviour_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  6 15:25:56 2022...

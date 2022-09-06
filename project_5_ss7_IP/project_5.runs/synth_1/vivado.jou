@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Sep  6 15:25:15 2022
+# Process ID: 20200
+# Current directory: H:/EEEN402/project_5/project_5.runs/synth_1
+# Command line: vivado.exe -log one_second_clock_behaviour.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source one_second_clock_behaviour.tcl
+# Log file: H:/EEEN402/project_5/project_5.runs/synth_1/one_second_clock_behaviour.vds
+# Journal file: H:/EEEN402/project_5/project_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source one_second_clock_behaviour.tcl -notrace

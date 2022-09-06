@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xpm,../../../Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../project_5.srcs/sources_1/ip/clk_5MHz"
+xpm_VCOMP.vhd,vhdl,xpm,../../../Xilinx/Vivado/2020.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../project_5.srcs/sources_1/ip/clk_5MHz"
+clk_5MHz_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../project_5.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.vhdl,incdir="../../../../project_5.srcs/sources_1/ip/clk_5MHz"
+glbl.v,Verilog,xil_defaultlib,glbl.v
