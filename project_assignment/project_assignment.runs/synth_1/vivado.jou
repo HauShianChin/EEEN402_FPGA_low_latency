@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Aug 28 22:12:22 2022
+# Process ID: 1540
+# Current directory: D:/GitHub/EEEN402_FPGA_low_latency/project_assignment/project_assignment.runs/synth_1
+# Command line: vivado.exe -log comp_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comp_adder.tcl
+# Log file: D:/GitHub/EEEN402_FPGA_low_latency/project_assignment/project_assignment.runs/synth_1/comp_adder.vds
+# Journal file: D:/GitHub/EEEN402_FPGA_low_latency/project_assignment/project_assignment.runs/synth_1\vivado.jou
+# Running On: Ian, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17119 MB
+#-----------------------------------------------------------
+source comp_adder.tcl -notrace

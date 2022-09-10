@@ -2,45 +2,45 @@
 # It contains project source information necessary for synthesis and implementation.
 
 # Block Designs: bd/Lab6_1/Lab6_1.bd
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1 || ORIG_REF_NAME==Lab6_1} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1 || ORIG_REF_NAME==Lab6_1} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_microblaze_0_0 || ORIG_REF_NAME==Lab6_1_microblaze_0_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_microblaze_0_0 || ORIG_REF_NAME==Lab6_1_microblaze_0_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_clk_wiz_0_0 || ORIG_REF_NAME==Lab6_1_clk_wiz_0_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_clk_wiz_0_0 || ORIG_REF_NAME==Lab6_1_clk_wiz_0_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_axi_gpio_0_0 || ORIG_REF_NAME==Lab6_1_axi_gpio_0_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_axi_gpio_0_0 || ORIG_REF_NAME==Lab6_1_axi_gpio_0_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_axi_uartlite_0_0 || ORIG_REF_NAME==Lab6_1_axi_uartlite_0_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_axi_uartlite_0_0 || ORIG_REF_NAME==Lab6_1_axi_uartlite_0_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_dlmb_v10_0/Lab6_1_dlmb_v10_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_dlmb_v10_0 || ORIG_REF_NAME==Lab6_1_dlmb_v10_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_dlmb_v10_0 || ORIG_REF_NAME==Lab6_1_dlmb_v10_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_ilmb_v10_0/Lab6_1_ilmb_v10_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_ilmb_v10_0 || ORIG_REF_NAME==Lab6_1_ilmb_v10_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_ilmb_v10_0 || ORIG_REF_NAME==Lab6_1_ilmb_v10_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_dlmb_bram_if_cntlr_0/Lab6_1_dlmb_bram_if_cntlr_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==Lab6_1_dlmb_bram_if_cntlr_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_dlmb_bram_if_cntlr_0 || ORIG_REF_NAME==Lab6_1_dlmb_bram_if_cntlr_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_ilmb_bram_if_cntlr_0/Lab6_1_ilmb_bram_if_cntlr_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==Lab6_1_ilmb_bram_if_cntlr_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_ilmb_bram_if_cntlr_0 || ORIG_REF_NAME==Lab6_1_ilmb_bram_if_cntlr_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_lmb_bram_0/Lab6_1_lmb_bram_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_lmb_bram_0 || ORIG_REF_NAME==Lab6_1_lmb_bram_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_lmb_bram_0 || ORIG_REF_NAME==Lab6_1_lmb_bram_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_mdm_1_0/Lab6_1_mdm_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_mdm_1_0 || ORIG_REF_NAME==Lab6_1_mdm_1_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_mdm_1_0 || ORIG_REF_NAME==Lab6_1_mdm_1_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_rst_clk_wiz_0_100M_0 || ORIG_REF_NAME==Lab6_1_rst_clk_wiz_0_100M_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_rst_clk_wiz_0_100M_0 || ORIG_REF_NAME==Lab6_1_rst_clk_wiz_0_100M_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_xbar_0/Lab6_1_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_xbar_0 || ORIG_REF_NAME==Lab6_1_xbar_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_xbar_0 || ORIG_REF_NAME==Lab6_1_xbar_0} -quiet] -quiet
 
 # IP: bd/Lab6_1/ip/Lab6_1_microblaze_0_axi_periph_0/Lab6_1_microblaze_0_axi_periph_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Lab6_1_microblaze_0_axi_periph_0 || ORIG_REF_NAME==Lab6_1_microblaze_0_axi_periph_0} -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab6_1_microblaze_0_axi_periph_0 || ORIG_REF_NAME==Lab6_1_microblaze_0_axi_periph_0} -quiet] -quiet
 
-# XDC: bd/Lab6_1/Lab6_1_ooc.xdc
+# XDC: d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/Lab6_1_ooc.xdc

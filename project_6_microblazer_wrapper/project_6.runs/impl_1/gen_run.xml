@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662345486">
-  <File Type="BITSTR-BMM" Name="Lab6_1_wrapper_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Lab6_1_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Lab6_1_wrapper_timing_summary_init.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662775433">
   <File Type="ROUTE-PWR" Name="Lab6_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Lab6_1_wrapper.tcl"/>
-  <File Type="OPT-TIMING" Name="Lab6_1_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Lab6_1_wrapper_opt.dcp"/>
+  <File Type="BITSTR-MMI" Name="Lab6_1_wrapper.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Lab6_1_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Lab6_1_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Lab6_1_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Lab6_1_wrapper_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="Lab6_1_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Lab6_1_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="Lab6_1_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Lab6_1_wrapper.hwdef"/>
   <File Type="PWROPT-DCP" Name="Lab6_1_wrapper_pwropt.dcp"/>
@@ -22,13 +22,14 @@
   <File Type="PLACE-CTRL" Name="Lab6_1_wrapper_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="Lab6_1_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Lab6_1_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Lab6_1_wrapper.bin"/>
   <File Type="PLACE-TIMING" Name="Lab6_1_wrapper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Lab6_1_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Lab6_1_wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="Lab6_1_wrapper.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="Lab6_1_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Lab6_1_wrapper_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="Lab6_1_wrapper_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="Lab6_1_wrapper.msk"/>
+  <File Type="BITSTR-RBT" Name="Lab6_1_wrapper.rbt"/>
   <File Type="PHYSOPT-TIMING" Name="Lab6_1_wrapper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Lab6_1_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Lab6_1_wrapper_routed.dcp"/>
@@ -36,7 +37,6 @@
   <File Type="ROUTE-DRC" Name="Lab6_1_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Lab6_1_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="Lab6_1_wrapper_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Lab6_1_wrapper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Lab6_1_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Lab6_1_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Lab6_1_wrapper_methodology_drc_routed.pb"/>
@@ -57,11 +57,11 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Lab6_1_wrapper_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Lab6_1_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Lab6_1_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Lab6_1_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Lab6_1_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Lab6_1_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Lab6_1_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="Lab6_1_wrapper.rbt"/>
   <File Type="BITSTR-NKY" Name="Lab6_1_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="Lab6_1_wrapper_bd.bmm"/>
   <File Type="PDI-FILE" Name="Lab6_1_wrapper.pdi"/>
   <File Type="RCFI_FILE" Name="Lab6_1_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="Lab6_1_wrapper.cfi"/>
@@ -75,7 +75,11 @@
   <File Type="BG-DRC" Name="Lab6_1_wrapper.drc"/>
   <File Type="RDI-RDI" Name="Lab6_1_wrapper.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <File Type="ROUTE-RQS" Name="Lab6_1_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Lab6_1_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/Lab6_1/Lab6_1.bd">
       <FileInfo>
@@ -84,7 +88,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/Lab6_1/hdl/Lab6_1_wrapper.vhd">
+    <File Path="$PGENDIR/sources_1/bd/Lab6_1/hdl/Lab6_1_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -109,9 +113,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

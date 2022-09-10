@@ -964,7 +964,7 @@
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCONTEXT">IP_Integrator</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">3</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.MANAGED">TRUE</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.OUTPUTDIR">.</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.OUTPUTDIR">../../../../../../project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SELECTEDSIMMODEL"/>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SHAREDDIR">../../ipshared</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SWVERSION">2020.1</spirit:configurableElementValue>
@@ -1025,6 +1025,261 @@
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_INTERRUPT" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_NON_SECURE" xilinx:valueSource="propagated"/>
           </xilinx:configElementInfos>
+          <xilinx:boundaryDescriptionInfo>
+            <xilinx:boundaryDescription xilinx:boundaryDescriptionJSON="{
+              &quot;schema&quot;: &quot;xilinx.com:schema:json_boundary:1.0&quot;,
+              &quot;boundary&quot;: {
+                &quot;ports&quot;: {
+                  &quot;Clk&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
+                  &quot;Reset&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
+                  &quot;Interrupt&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Interrupt_Address&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;31&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Interrupt_Ack&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;1&quot; } ],
+                  &quot;Instr_Addr&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;31&quot; } ],
+                  &quot;Instr&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;31&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;IFetch&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;I_AS&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;IReady&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;IWAIT&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;ICE&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;IUE&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Data_Addr&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;31&quot; } ],
+                  &quot;Data_Read&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;31&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Data_Write&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;31&quot; } ],
+                  &quot;D_AS&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;Read_Strobe&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;Write_Strobe&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;DReady&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;DWait&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;DCE&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;DUE&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Byte_Enable&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;3&quot; } ],
+                  &quot;M_AXI_DP_AWADDR&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;31&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_AWPROT&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;2&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_AWVALID&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;M_AXI_DP_AWREADY&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_WDATA&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;31&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_WSTRB&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;3&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_WVALID&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;M_AXI_DP_WREADY&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_BRESP&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;1&quot;, &quot;size_right&quot;: &quot;0&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_BVALID&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_BREADY&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;M_AXI_DP_ARADDR&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;31&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_ARPROT&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;2&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_ARVALID&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;M_AXI_DP_ARREADY&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_RDATA&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;31&quot;, &quot;size_right&quot;: &quot;0&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_RRESP&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;1&quot;, &quot;size_right&quot;: &quot;0&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_RVALID&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;M_AXI_DP_RREADY&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;Dbg_Clk&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Dbg_TDI&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Dbg_TDO&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
+                  &quot;Dbg_Reg_En&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;0&quot;, &quot;size_right&quot;: &quot;7&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Dbg_Shift&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Dbg_Capture&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Dbg_Update&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Debug_Rst&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ],
+                  &quot;Dbg_Disable&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;driver_value&quot;: &quot;0&quot; } ]
+                },
+                &quot;interfaces&quot;: {
+                  &quot;CLK.CLK&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:signal:clock:1.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:signal:clock_rtl:1.0&quot;,
+                    &quot;mode&quot;: &quot;slave&quot;,
+                    &quot;parameters&quot;: {
+                      &quot;ASSOCIATED_BUSIF&quot;: [ { &quot;value&quot;: &quot;M0_AXIS:S0_AXIS:M1_AXIS:S1_AXIS:M2_AXIS:S2_AXIS:M3_AXIS:S3_AXIS:M4_AXIS:S4_AXIS:M5_AXIS:S5_AXIS:M6_AXIS:S6_AXIS:M7_AXIS:S7_AXIS:M8_AXIS:S8_AXIS:M9_AXIS:S9_AXIS:M10_AXIS:S10_AXIS:M11_AXIS:S11_AXIS:M12_AXIS:S12_AXIS:M13_AXIS:S13_AXIS:M14_AXIS:S14_AXIS:M15_AXIS:S15_AXIS:DLMB:ILMB:M_AXI_DP:M_AXI_IP:M_AXI_DC:M_AXI_IC:M_ACE_DC:M_ACE_IC:MON_DLMB:MON_ILMB:MON_AXI_DP:MON_AXI_IP:MON_AXI_DC:MON_AXI_IC:MON_ACE_DC:MON_ACE_IC&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;ASSOCIATED_RESET&quot;: [ { &quot;value&quot;: &quot;Reset&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;FREQ_HZ&quot;: [ { &quot;value&quot;: &quot;100000000&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;user&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;FREQ_TOLERANCE_HZ&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;PHASE&quot;: [ { &quot;value&quot;: &quot;0.0&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;float&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;CLK_DOMAIN&quot;: [ { &quot;value&quot;: &quot;/clk_wiz_0_clk_out1&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;INSERT_VIP&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;resolve_type&quot;: &quot;user&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;simulation.rtl&quot;, &quot;is_static_object&quot;: false } ]
+                    },
+                    &quot;port_maps&quot;: {
+                      &quot;CLK&quot;: [ { &quot;physical_name&quot;: &quot;Clk&quot; } ]
+                    }
+                  },
+                  &quot;RST.RESET&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:signal:reset:1.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:signal:reset_rtl:1.0&quot;,
+                    &quot;mode&quot;: &quot;slave&quot;,
+                    &quot;parameters&quot;: {
+                      &quot;POLARITY&quot;: [ { &quot;value&quot;: &quot;ACTIVE_HIGH&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;TYPE&quot;: [ { &quot;value&quot;: &quot;PROCESSOR&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;INSERT_VIP&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;resolve_type&quot;: &quot;user&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;simulation.rtl&quot;, &quot;is_static_object&quot;: false } ]
+                    },
+                    &quot;port_maps&quot;: {
+                      &quot;RST&quot;: [ { &quot;physical_name&quot;: &quot;Reset&quot; } ]
+                    }
+                  },
+                  &quot;INTERRUPT&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:interface:mbinterrupt:1.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:interface:mbinterrupt_rtl:1.0&quot;,
+                    &quot;mode&quot;: &quot;slave&quot;,
+                    &quot;parameters&quot;: {
+                      &quot;SENSITIVITY&quot;: [ { &quot;value&quot;: &quot;LEVEL_HIGH&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;LOW_LATENCY&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;propagated&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;usage&quot;: &quot;all&quot; } ]
+                    },
+                    &quot;port_maps&quot;: {
+                      &quot;ACK&quot;: [ { &quot;physical_name&quot;: &quot;Interrupt_Ack&quot; } ],
+                      &quot;ADDRESS&quot;: [ { &quot;physical_name&quot;: &quot;Interrupt_Address&quot; } ],
+                      &quot;INTERRUPT&quot;: [ { &quot;physical_name&quot;: &quot;Interrupt&quot; } ]
+                    }
+                  },
+                  &quot;DLMB&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:interface:lmb:1.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:interface:lmb_rtl:1.0&quot;,
+                    &quot;mode&quot;: &quot;master&quot;,
+                    &quot;address_space_ref&quot;: &quot;Data&quot;,
+                    &quot;parameters&quot;: {
+                      &quot;ADDR_WIDTH&quot;: [ { &quot;value&quot;: &quot;32&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;DATA_WIDTH&quot;: [ { &quot;value&quot;: &quot;32&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;PROTOCOL&quot;: [ { &quot;value&quot;: &quot;STANDARD&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;dependent&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;READ_WRITE_MODE&quot;: [ { &quot;value&quot;: &quot;READ_WRITE&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ]
+                    },
+                    &quot;port_maps&quot;: {
+                      &quot;ABUS&quot;: [ { &quot;physical_name&quot;: &quot;Data_Addr&quot; } ],
+                      &quot;ADDRSTROBE&quot;: [ { &quot;physical_name&quot;: &quot;D_AS&quot; } ],
+                      &quot;BE&quot;: [ { &quot;physical_name&quot;: &quot;Byte_Enable&quot; } ],
+                      &quot;CE&quot;: [ { &quot;physical_name&quot;: &quot;DCE&quot; } ],
+                      &quot;READDBUS&quot;: [ { &quot;physical_name&quot;: &quot;Data_Read&quot; } ],
+                      &quot;READSTROBE&quot;: [ { &quot;physical_name&quot;: &quot;Read_Strobe&quot; } ],
+                      &quot;READY&quot;: [ { &quot;physical_name&quot;: &quot;DReady&quot; } ],
+                      &quot;UE&quot;: [ { &quot;physical_name&quot;: &quot;DUE&quot; } ],
+                      &quot;WAIT&quot;: [ { &quot;physical_name&quot;: &quot;DWait&quot; } ],
+                      &quot;WRITEDBUS&quot;: [ { &quot;physical_name&quot;: &quot;Data_Write&quot; } ],
+                      &quot;WRITESTROBE&quot;: [ { &quot;physical_name&quot;: &quot;Write_Strobe&quot; } ]
+                    }
+                  },
+                  &quot;ILMB&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:interface:lmb:1.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:interface:lmb_rtl:1.0&quot;,
+                    &quot;mode&quot;: &quot;master&quot;,
+                    &quot;address_space_ref&quot;: &quot;Instruction&quot;,
+                    &quot;parameters&quot;: {
+                      &quot;ADDR_WIDTH&quot;: [ { &quot;value&quot;: &quot;32&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;dependent&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;DATA_WIDTH&quot;: [ { &quot;value&quot;: &quot;32&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;PROTOCOL&quot;: [ { &quot;value&quot;: &quot;STANDARD&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;dependent&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;READ_WRITE_MODE&quot;: [ { &quot;value&quot;: &quot;READ_ONLY&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ]
+                    },
+                    &quot;port_maps&quot;: {
+                      &quot;ABUS&quot;: [ { &quot;physical_name&quot;: &quot;Instr_Addr&quot; } ],
+                      &quot;ADDRSTROBE&quot;: [ { &quot;physical_name&quot;: &quot;I_AS&quot; } ],
+                      &quot;CE&quot;: [ { &quot;physical_name&quot;: &quot;ICE&quot; } ],
+                      &quot;READDBUS&quot;: [ { &quot;physical_name&quot;: &quot;Instr&quot; } ],
+                      &quot;READSTROBE&quot;: [ { &quot;physical_name&quot;: &quot;IFetch&quot; } ],
+                      &quot;READY&quot;: [ { &quot;physical_name&quot;: &quot;IReady&quot; } ],
+                      &quot;UE&quot;: [ { &quot;physical_name&quot;: &quot;IUE&quot; } ],
+                      &quot;WAIT&quot;: [ { &quot;physical_name&quot;: &quot;IWAIT&quot; } ]
+                    }
+                  },
+                  &quot;M_AXI_DP&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:interface:aximm:1.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:interface:aximm_rtl:1.0&quot;,
+                    &quot;mode&quot;: &quot;master&quot;,
+                    &quot;address_space_ref&quot;: &quot;Data&quot;,
+                    &quot;parameters&quot;: {
+                      &quot;ID_WIDTH&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;READ_WRITE_MODE&quot;: [ { &quot;value&quot;: &quot;READ_WRITE&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;SUPPORTS_NARROW_BURST&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;HAS_BURST&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;HAS_LOCK&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;DATA_WIDTH&quot;: [ { &quot;value&quot;: &quot;32&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;ADDR_WIDTH&quot;: [ { &quot;value&quot;: &quot;32&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;NUM_READ_OUTSTANDING&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;NUM_WRITE_OUTSTANDING&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;NUM_READ_THREADS&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;NUM_WRITE_THREADS&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;MAX_BURST_LENGTH&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;PROTOCOL&quot;: [ { &quot;value&quot;: &quot;AXI4LITE&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;usage&quot;: &quot;all&quot; } ],
+                      &quot;FREQ_HZ&quot;: [ { &quot;value&quot;: &quot;100000000&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;AWUSER_WIDTH&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;ARUSER_WIDTH&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;WUSER_WIDTH&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;RUSER_WIDTH&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;BUSER_WIDTH&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_PROT&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_CACHE&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_QOS&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_REGION&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_src&quot;: &quot;constant&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_WSTRB&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_BRESP&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;HAS_RRESP&quot;: [ { &quot;value&quot;: &quot;1&quot;, &quot;value_src&quot;: &quot;auto&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;PHASE&quot;: [ { &quot;value&quot;: &quot;0.0&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;float&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;CLK_DOMAIN&quot;: [ { &quot;value&quot;: &quot;/clk_wiz_0_clk_out1&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;RUSER_BITS_PER_BYTE&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;WUSER_BITS_PER_BYTE&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;value_permission&quot;: &quot;bd&quot;, &quot;resolve_type&quot;: &quot;generated&quot;, &quot;format&quot;: &quot;long&quot;, &quot;is_static_object&quot;: false } ],
+                      &quot;INSERT_VIP&quot;: [ { &quot;value&quot;: &quot;0&quot;, &quot;resolve_type&quot;: &quot;user&quot;, &quot;format&quot;: &quot;long&quot;, &quot;usage&quot;: &quot;simulation.rtl&quot;, &quot;is_static_object&quot;: false } ]
+                    },
+                    &quot;port_maps&quot;: {
+                      &quot;ARADDR&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_ARADDR&quot; } ],
+                      &quot;ARPROT&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_ARPROT&quot; } ],
+                      &quot;ARREADY&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_ARREADY&quot; } ],
+                      &quot;ARVALID&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_ARVALID&quot; } ],
+                      &quot;AWADDR&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_AWADDR&quot; } ],
+                      &quot;AWPROT&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_AWPROT&quot; } ],
+                      &quot;AWREADY&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_AWREADY&quot; } ],
+                      &quot;AWVALID&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_AWVALID&quot; } ],
+                      &quot;BREADY&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_BREADY&quot; } ],
+                      &quot;BRESP&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_BRESP&quot; } ],
+                      &quot;BVALID&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_BVALID&quot; } ],
+                      &quot;RDATA&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_RDATA&quot; } ],
+                      &quot;RREADY&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_RREADY&quot; } ],
+                      &quot;RRESP&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_RRESP&quot; } ],
+                      &quot;RVALID&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_RVALID&quot; } ],
+                      &quot;WDATA&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_WDATA&quot; } ],
+                      &quot;WREADY&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_WREADY&quot; } ],
+                      &quot;WSTRB&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_WSTRB&quot; } ],
+                      &quot;WVALID&quot;: [ { &quot;physical_name&quot;: &quot;M_AXI_DP_WVALID&quot; } ]
+                    }
+                  },
+                  &quot;DEBUG&quot;: {
+                    &quot;vlnv&quot;: &quot;xilinx.com:interface:mbdebug:3.0&quot;,
+                    &quot;abstraction_type&quot;: &quot;xilinx.com:interface:mbdebug_rtl:3.0&quot;,
+                    &quot;mode&quot;: &quot;slave&quot;,
+                    &quot;port_maps&quot;: {
+                      &quot;CAPTURE&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_Capture&quot; } ],
+                      &quot;CLK&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_Clk&quot; } ],
+                      &quot;DISABLE&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_Disable&quot; } ],
+                      &quot;REG_EN&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_Reg_En&quot; } ],
+                      &quot;RST&quot;: [ { &quot;physical_name&quot;: &quot;Debug_Rst&quot; } ],
+                      &quot;SHIFT&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_Shift&quot; } ],
+                      &quot;TDI&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_TDI&quot; } ],
+                      &quot;TDO&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_TDO&quot; } ],
+                      &quot;UPDATE&quot;: [ { &quot;physical_name&quot;: &quot;Dbg_Update&quot; } ]
+                    }
+                  }
+                },
+                &quot;address_spaces&quot;: {
+                  &quot;Data&quot;: {
+                    &quot;range&quot;: &quot;4294967296&quot;,
+                    &quot;width&quot;: &quot;32&quot;
+                  },
+                  &quot;Instruction&quot;: {
+                    &quot;range&quot;: &quot;4294967296&quot;,
+                    &quot;width&quot;: &quot;32&quot;
+                  }
+                },
+                &quot;memory_maps&quot;: {
+                  &quot;S_AXI_DEBUG&quot;: {
+                    &quot;description&quot;: &quot;AXI debug memory map&quot;,
+                    &quot;address_blocks&quot;: {
+                      &quot;Reg&quot;: {
+                        &quot;base_address&quot;: &quot;0&quot;,
+                        &quot;range&quot;: &quot;4096&quot;,
+                        &quot;display_name&quot;: &quot;Reg&quot;,
+                        &quot;description&quot;: &quot;Debug Register Block&quot;,
+                        &quot;usage&quot;: &quot;register&quot;,
+                        &quot;access&quot;: &quot;read-write&quot;
+                      }
+                    }
+                  }
+                }
+              }
+            }"/>
+          </xilinx:boundaryDescriptionInfo>
         </xilinx:componentInstanceExtensions>
       </spirit:vendorExtensions>
     </spirit:componentInstance>

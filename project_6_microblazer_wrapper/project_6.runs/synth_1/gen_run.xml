@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662345473">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662775433">
   <File Type="PA-TCL" Name="Lab6_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Lab6_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Lab6_1_wrapper_reports.tcl"/>
@@ -9,7 +9,7 @@
   <File Type="RDS-DCP" Name="Lab6_1_wrapper.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Lab6_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="Lab6_1_wrapper_timing_summary_synth.pb"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/Lab6_1/Lab6_1.bd">
       <FileInfo>
@@ -18,7 +18,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/Lab6_1/hdl/Lab6_1_wrapper.vhd">
+    <File Path="$PGENDIR/sources_1/bd/Lab6_1/hdl/Lab6_1_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -43,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Lab6_1_clk_wiz_0_0"/>

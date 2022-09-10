@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "H:/GitHub/project_6/project_6.runs/synth_1/Lab6_1_wrapper.tcl"
+  variable script "D:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.runs/synth_1/Lab6_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,43 +77,43 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir H:/GitHub/project_6/project_6.cache/wt [current_project]
-set_property parent.project_path H:/GitHub/project_6/project_6.xpr [current_project]
+set_property webtalk.parent_dir D:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.cache/wt [current_project]
+set_property parent.project_path D:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo h:/GitHub/project_6/project_6.cache/ip [current_project]
+set_property ip_output_repo d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib H:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/hdl/Lab6_1_wrapper.vhd
-add_files H:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/Lab6_1.bd
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_dlmb_v10_0/Lab6_1_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_ilmb_v10_0/Lab6_1_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_dlmb_bram_if_cntlr_0/Lab6_1_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_ilmb_bram_if_cntlr_0/Lab6_1_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_lmb_bram_0/Lab6_1_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_mdm_1_0/Lab6_1_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_mdm_1_0/Lab6_1_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_xbar_0/Lab6_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all H:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/Lab6_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/GitHub/project_6/project_6.srcs/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/data/mb_bootloop_le.elf]
+read_vhdl -library xil_defaultlib d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/hdl/Lab6_1_wrapper.vhd
+add_files D:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.srcs/sources_1/bd/Lab6_1/Lab6_1.bd
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/Lab6_1_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_clk_wiz_0_0/Lab6_1_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_axi_gpio_0_0/Lab6_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_axi_uartlite_0_0/Lab6_1_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_dlmb_v10_0/Lab6_1_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_ilmb_v10_0/Lab6_1_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_dlmb_bram_if_cntlr_0/Lab6_1_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_ilmb_bram_if_cntlr_0/Lab6_1_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_lmb_bram_0/Lab6_1_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_mdm_1_0/Lab6_1_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_mdm_1_0/Lab6_1_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_rst_clk_wiz_0_100M_0/Lab6_1_rst_clk_wiz_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_xbar_0/Lab6_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/Lab6_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/EEEN402_FPGA_low_latency/project_6_microblazer_wrapper/project_6.gen/sources_1/bd/Lab6_1/ip/Lab6_1_microblaze_0_0/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -132,6 +132,9 @@ close [open __synthesis_is_running__ w]
 OPTRACE "synth_design" START { }
 synth_design -top Lab6_1_wrapper -part xc7a100tcsg324-1
 OPTRACE "synth_design" END { }
+if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
+ send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
+}
 
 
 OPTRACE "write_checkpoint" START { CHECKPOINT }
