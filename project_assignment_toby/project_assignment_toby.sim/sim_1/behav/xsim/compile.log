@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/EEEN402_FPGA_low_latency/project_assignment_toby/project_assignment_toby.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'c_addsub_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/EEEN402_FPGA_low_latency/project_assignment_toby/project_assignment_toby.srcs/sim_1/new/compareAdd_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'compareAdd_tb'
