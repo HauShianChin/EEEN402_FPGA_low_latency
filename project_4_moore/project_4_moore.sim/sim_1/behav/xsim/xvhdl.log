@@ -1,2 +1,13 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "H:/EEEN402/project_4_moore/project_4_moore.srcs/sources_1/new/moore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sources_1/new/moore.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'moore'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'moore_tb'
+ERROR: [VRFC 10-4982] syntax error near ''' [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:51]
+ERROR: [VRFC 10-4982] syntax error near ')' [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:62]
+ERROR: [VRFC 10-2989] 'input' is not declared [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:60]
+ERROR: [VRFC 10-2989] 'input' is not declared [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:70]
+ERROR: [VRFC 10-2989] 'input' is not declared [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:72]
+ERROR: [VRFC 10-2989] 'input' is not declared [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:74]
+ERROR: [VRFC 10-2989] 'clk_period' is not declared [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:79]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd:41]
+INFO: [VRFC 10-8704] VHDL file 'D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.srcs/sim_1/new/moore_tb.vhd' is ignored due to errors

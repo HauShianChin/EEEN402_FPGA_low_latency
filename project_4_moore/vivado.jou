@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Oct 13 13:43:38 2022
+# Process ID: 23716
+# Current directory: D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6840 D:\GitHub\EEEN402_FPGA_low_latency\project_4_moore\project_4_moore.xpr
+# Log file: D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/vivado.log
+# Journal file: D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore\vivado.jou
+# Running On: Ian, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17119 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/EEEN402_FPGA_low_latency/project_4_moore/project_4_moore.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
