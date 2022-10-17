@@ -1,0 +1,130 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2780E6E29B7BDA4E",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "PWMAudio_0": "",
+      "clk_wiz_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "AUD_PWM_0": {
+        "direction": "O"
+      },
+      "AUD_SD_0": {
+        "direction": "O"
+      },
+      "SW_0": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "resetn_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "PWMAudio_0": {
+        "vlnv": "Delta_securities:user:PWMAudio:1.0",
+        "xci_name": "design_1_PWMAudio_0_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "PWMAudio_0_AUD_PWM": {
+        "ports": [
+          "PWMAudio_0/AUD_PWM",
+          "AUD_PWM_0"
+        ]
+      },
+      "PWMAudio_0_AUD_SD": {
+        "ports": [
+          "PWMAudio_0/AUD_SD",
+          "AUD_SD_0"
+        ]
+      },
+      "SW_0_1": {
+        "ports": [
+          "SW_0",
+          "PWMAudio_0/SW"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "PWMAudio_0/CLK100MHZ"
+        ]
+      },
+      "resetn_0_1": {
+        "ports": [
+          "resetn_0",
+          "clk_wiz_0/resetn"
+        ]
+      }
+    }
+  }
+}

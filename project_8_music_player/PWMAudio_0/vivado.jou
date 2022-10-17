@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 19 14:20:58 2022
+# Process ID: 13116
+# Current directory: H:/EEEN402/project_8a/PWMAudio_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2448 H:\EEEN402\project_8a\PWMAudio_0\PWMAudio_0.dcp
+# Log file: H:/EEEN402/project_8a/PWMAudio_0/vivado.log
+# Journal file: H:/EEEN402/project_8a/PWMAudio_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint H:/EEEN402/project_8a/PWMAudio_0/PWMAudio_0.dcp

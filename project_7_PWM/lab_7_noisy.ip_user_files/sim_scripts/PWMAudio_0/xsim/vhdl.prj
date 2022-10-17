@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../../lab_7_noisy.srcs/sources_1/ip/PWMAudio_0/src/PWMDriver.vhd" \
+"../../../../lab_7_noisy.srcs/sources_1/ip/PWMAudio_0/src/PWMAudio.vhd" \
+"../../../../lab_7_noisy.srcs/sources_1/ip/PWMAudio_0/sim/PWMAudio_0.vhd" \
+
+nosort
