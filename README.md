@@ -3,7 +3,7 @@ VHDL projects
 
 Academic experience of VHDL.
 
-Project 1: Created an SSD that runs off a binary counter. First experience with structural design. 
+Project 1: Created an 7SD that runs off a binary counter. First experience with structural design. 
 
 Project 2: Demonstrates my understanding of dataflow design, structural design, behavioral design and a combination of the previous 3
 
